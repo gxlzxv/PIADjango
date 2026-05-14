@@ -23,3 +23,18 @@ python manage.py migrate
 5. Correr el servidor
 Para verificar que todo está bien, ejecuten:
 python manage.py runserver
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ejecuten git pull origin master para bajar los cambios que otros hayan subido o preguntar si se actualizo 
+
+Al terminar 
+
+git add . (como esta agregado el .gitignore esta bien usar el "add .")
+
+git commit -m 
+
+git push origin master
+
+URLs del proyecto: las apps tienen rutas específicas (doctores/, /empleados/, etc.). Si entran a la raíz 127.0.0.1:8000/ y ven un error 404, es normal, solo deben navegar a la ruta de la app en la que estén trabajando.
+
+Nota: Si instalan alguna librería nueva (como django-crispy-forms o similar), no olviden actualizar el archivo de requisitos con pip freeze > requirements.txt y subirlo al repo.
