@@ -1,4 +1,5 @@
-# PIADjango
+# PIADjango 
+      todos los archivos estan en el branch master aqui solo es texto
 
 1. Clonar el repositorio
 Abran una terminal en la carpeta donde quieran guardar el proyecto y ejecuten:
