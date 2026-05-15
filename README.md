@@ -6,4 +6,4 @@ Conectar y usar
 
 3. Base de datos: python manage.py migrate
 
-4. Cargar los users: python manage.py loaddata permisos_y_usuarios.json (o el nombre que le hayas puesto al archivo).
+4. Cargar los users: python manage.py loaddata permisos_y_usuarios.json
