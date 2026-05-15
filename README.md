@@ -16,7 +16,10 @@ pip install -r requirements.txt
 Como no subi mi base de datos local db.sqlite3, deben crear la suya y aplicar la estructura del proyecto:
 python manage.py migrate
 
-6. Correr el servidor
+6. Cargar los usuarios
+   python manage.py loaddata usuarios_iniciales.json, con la base lista ya migrada nesecitan cargas los datos y configuraciones de los usuarios
+
+7. Correr el servidor
 Para verificar que todo está bien, ejecutar:
 python manage.py runserver
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -27,10 +30,10 @@ Al terminar
 
 git add . (como esta agregado el .gitignore esta bien usar el "add .")
 
-git commit -m 
+git commit -m ""
 
 git push origin master
 
 URLs del proyecto: las apps tienen rutas específicas (doctores/, /empleados/, etc.). Si entran a la raíz 127.0.0.1:8000/ y ven un error 404, es normal, solo deben navegar a la ruta de la app en la que estén trabajando.
 
-Nota: Si instalan alguna librería nueva (como django-crispy-forms o similar), no olviden actualizar el archivo de requisitos con pip freeze > requirements.txt y subirlo al repo.
+N: Si instalan alguna librería nueva (como django-crispy-forms o similar), no olviden actualizar el archivo de requisitos con pip freeze > requirements.txt y subirlo al repo.
