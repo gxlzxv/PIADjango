@@ -37,7 +37,39 @@
 
                 <div class="tarjeta">
 
-                    <img src="{% static 'productos/img/producto.jpg' %}" alt="">
+                {% if producto.nombre == "Collar Antipulgas" %}
+                <img src="{% static 'productos/img/collar.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Alimento Premium" %}
+                <img src="{% static 'productos/img/croquetas.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Juguete de Pelota" %}
+                <img src="{% static 'productos/img/juguete.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Arena para Gato" %}
+                <img src="{% static 'productos/img/arena.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Shampoo Medicado" %}
+                <img src="{% static 'productos/img/shampoo.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Transportadora" %}
+                <img src="{% static 'productos/img/transportadora.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Vitaminas Caninas" %}
+                <img src="{% static 'productos/img/medicina.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Rascador para Gato" %}
+                <img src="{% static 'productos/img/rascador.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Cepillo de Cerdas" %}
+                <img src="{% static 'productos/img/cepillo.jpg' %}" alt="">
+
+                {% elif producto.nombre == "Alimento para Cachorros" %}
+                <img src="{% static 'productos/img/cachorros.jpg' %}" alt="">
+
+                {% else %}
+                <img src="{% static 'productos/img/producto.jpg' %}" alt="">
+                {% endif %}
 
                     <h3>{{ producto.nombre }}</h3>
 
