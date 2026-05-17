@@ -1,0 +1,240 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Veterinarios</title>
+
+    <link rel="stylesheet" href="{% static 'servicios/css/estilo.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Veterinaria Patitas Felices</h1>
+        <h2>Servicios para el cuidado de tus mascotas</h2>
+    </header>
+
+    <main>
+
+        <p>
+            En nuestra veterinaria ofrecemos distintos servicios especializados para garantizar
+            la salud, higiene y bienestar de tus mascotas. Contamos con personal capacitado
+            y atención profesional para perros, gatos y otras mascotas.
+        </p>
+
+        <article>
+            <h2>Consulta Veterinaria</h2>
+
+            <div class="contenedor direccion">
+
+                <div class="tarjeta">
+                    <h3>¿Qué incluye?</h3>
+                    <p>
+                        Realizamos revisiones generales para detectar enfermedades, evaluar
+                        el estado físico de las mascotas y brindar tratamientos adecuados.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Atención médica</h3>
+
+                    <img src="{% static 'servicios/img/consulta.jpg' %}" alt="">
+
+                    <p>
+                        Consultas realizadas por médicos veterinarios profesionales.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Paquetes y Precios</h3>
+
+                    <p>
+                        Consulta básica: $250 MXN <br><br>
+
+                        Consulta + vacunación: $450 MXN <br><br>
+
+                        Consulta completa con revisión general: $600 MXN
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <article>
+            <h2>Baño y Estética</h2>
+
+            <div class="contenedor centro">
+
+                <div class="tarjeta">
+                    <h3>Servicio de baño</h3>
+
+                    <p>
+                        Ofrecemos baño especializado con productos adecuados para cada tipo
+                        de pelaje y piel de las mascotas.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Estética</h3>
+
+                    <img src="{% static 'servicios/img/estetica.jpg' %}" alt="">
+
+                    <p>
+                        Corte de pelo, limpieza de orejas y cuidado general.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Beneficios</h3>
+
+                    <p>
+                        Mantener una buena higiene ayuda a prevenir infecciones y mejora
+                        la comodidad de las mascotas.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <article>
+            <h2>Vacunación</h2>
+
+            <div class="contenedor wrap">
+
+                <div class="tarjeta">
+                    <h3>Vacunas básicas</h3>
+
+                    <p>
+                        Aplicamos vacunas esenciales para proteger a perros y gatos contra
+                        enfermedades comunes.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Protección</h3>
+
+                    <img src="{% static 'servicios/img/vacunas.jpg' %}" alt="">
+
+                    <p>
+                        Las vacunas fortalecen el sistema inmunológico de las mascotas.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Desparasitación</h3>
+
+                    <p>
+                        También contamos con tratamientos antiparasitarios internos y externos
+                        para el bienestar de las mascotas.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Prevención</h3>
+
+                    <p>
+                        La prevención médica ayuda a reducir riesgos de enfermedades y mejora
+                        la calidad de vida de las mascotas.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <article>
+            <h2>Cirugías y Emergencias</h2>
+
+            <div class="contenedor justificado">
+
+                <div class="tarjeta">
+                    <h3>Cirugías</h3>
+
+                    <p>
+                        Realizamos procedimientos quirúrgicos básicos y especializados con
+                        atención segura y profesional.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Emergencias</h3>
+
+                    <p>
+                        Atendemos emergencias veterinarias para brindar apoyo inmediato
+                        a las mascotas cuando más lo necesitan.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Cuidados</h3>
+
+                    <p>
+                        Nuestro personal supervisa la recuperación y seguimiento médico
+                        después de cada procedimiento.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+        <article>
+            <h2>Servicios</h2>
+
+            <div class="comparacion">
+
+                <div class="tarjeta">
+                    <h3>Servicios Preventivos</h3>
+
+                    <p>
+                        Incluyen vacunación, consultas y desparasitación para prevenir enfermedades.
+                    </p>
+                </div>
+
+                <div class="tarjeta grande">
+                    <h3>Servicios Especializados</h3>
+
+                    <p>
+                        Incluyen cirugías, emergencias y tratamientos médicos avanzados
+                        para el cuidado integral de las mascotas.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <address>
+
+            <h3>Veterinaria Patitas Felices</h3>
+
+            <p>
+                Av. Principal #245, Guadalupe, Nuevo León
+            </p>
+
+            <p>
+                📞 Teléfono: +52 123 456 78 90
+            </p>
+
+            <p>
+                📧 Correo: contacto@patitasfelices.com
+            </p>
+
+            <p>
+                🕒 Horario:
+                Lunes a Sábado de 9:00 AM a 7:00 PM
+            </p>
+
+            <p>
+                © 2026 Veterinaria Patitas Felices |
+                Todos los derechos reservados
+            </p>
+
+        </address>
+    </footer>
+
+</body>
+</html>
