@@ -1,0 +1,102 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Veterinarios</title>
+
+    <link rel="stylesheet" href="{% static 'productos/css/estilos.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Veterinaria Patitas Felices</h1>
+        <h2>Productos para el cuidado de mascotas</h2>
+    </header>
+
+    <main>
+
+        <p>
+            En nuestra veterinaria contamos con distintos productos para
+            el bienestar, higiene y alimentación de las mascotas.
+            Todos nuestros productos son seleccionados para brindar
+            calidad y seguridad.
+        </p>
+
+        <article>
+
+            <h2>Catálogo de Productos</h2>
+
+            <div class="contenedor wrap">
+
+                {% for producto in productos %}
+
+                <div class="tarjeta">
+
+                    <img src="{% static 'productos/img/producto.jpg' %}" alt="">
+
+                    <h3>{{ producto.nombre }}</h3>
+
+                    <p>
+                        {{ producto.descripcion }}
+                    </p>
+
+                    <p>
+                        <strong>Precio:</strong>
+                        ${{ producto.precio }}
+                    </p>
+
+                    <p>
+                        <strong>Stock disponible:</strong>
+                        {{ producto.stock }}
+                    </p>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <address>
+
+            <h3>Veterinaria Patitas Felices</h3>
+
+            <p>
+                Av. Principal #245, Guadalupe, Nuevo León
+            </p>
+
+            <p>
+                📞 Teléfono: +52 123 456 78 90
+            </p>
+
+            <p>
+                📧 Correo: contacto@patitasfelices.com
+            </p>
+
+            <p>
+                🕒 Horario:
+                Lunes a Sábado de 9:00 AM a 7:00 PM
+            </p>
+
+            <p>
+                © 2026 Veterinaria Patitas Felices |
+                Todos los derechos reservados
+            </p>
+
+        </address>
+
+    </footer>
+
+</body>
+
+</html>
