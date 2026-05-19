@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucursal Veterinaria</title>
+    <link rel="stylesheet" href="{% static 'sucursales/css/estilo.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Veterinaria Patitas Felices</h1>
+        <h2>Nuestra sucursal principal</h2>
+    </header>
+
+    <main>
+
+        <p>
+            Nuestra veterinaria cuenta con una sucursal equipada con instalaciones modernas,
+            personal capacitado y servicios especializados para brindar la mejor atención
+            a las mascotas.
+        </p>
+
+        <article>
+            <h2>Instalaciones</h2>
+
+            <div class="contenedor direccion">
+
+                <div class="tarjeta">
+                    <h3>Recepción</h3>
+                    <img src="{% static 'sucursales/img/recepcion.jpg' %}" alt="Recepción">
+                    <p>
+                        Área de recepción cómoda y organizada para atender a clientes
+                        y mascotas de manera rápida y eficiente.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Consultorios</h3>
+                    <img src="{% static 'sucursales/img/Consultorio.jpg' %}" alt="Consultorio veterinario">
+                    <p>
+                        Consultorios veterinarios equipados para revisiones médicas,
+                        vacunas y tratamientos preventivos.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2>Servicios Disponibles</h2>
+
+            <div class="contenedor centro">
+
+                <div class="tarjeta">
+                    <h3>Consultas</h3>
+                    <img src="{% static 'sucursales/img/consulta.jpg' %}" alt="Consulta veterinaria">
+                    <p>
+                        Atención médica general para perros, gatos y otras mascotas.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Vacunación</h3>
+                    <img src="{% static 'sucursales/img/vacunas.jpg' %}" alt="Vacunas ">
+                    <p>
+                        Aplicación de vacunas y seguimiento preventivo para la salud animal.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Estética</h3>
+                    <img src="{% static 'sucursales/img/estetica.jpg' %}" alt="Servicio de estética para mascotas">
+                    <p>
+                        Servicio de baño, corte de pelo y limpieza para mascotas.
+                    </p>
+                </div>
+
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <address>
+
+            <h3>Veterinaria Patitas Felices</h3>
+
+            <p>
+                Av. Principal #245, Guadalupe, Nuevo León
+            </p>
+
+            <p>
+                📞 Teléfono: +52 123 456 78 90
+            </p>
+
+            <p>
+                📧 Correo: contacto@patitasfelices.com
+            </p>
+
+            <p>
+                🕒 Horario:
+                Lunes a Sábado de 9:00 AM a 7:00 PM
+            </p>
+
+            <p>
+                © 2026 Veterinaria Patitas Felices |
+                Todos los derechos reservados
+            </p>
+
+        </address>
+    </footer>
+
+</body>
+</html>

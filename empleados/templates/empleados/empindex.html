@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados Veterinaria</title>
+    <link rel="stylesheet" href="{% static 'empleados/css/estilo.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>Veterinaria Patitas Felices</h1>
+        <h2>Nuestro equipo de empleados</h2>
+    </header>
+
+    <main>
+
+        <p>
+            En nuestra veterinaria contamos con personal capacitado para brindar
+            atención de calidad y el mejor cuidado para todas las mascotas.
+        </p>
+
+        <article>
+            <h2>Recepción y Atención</h2>
+
+            <div class="contenedor direccion">
+                <div class="tarjeta">
+                    <h3>Recepcionistas</h3>
+                    <img src="{% static 'empleados/img/recepcion.jpg' %}" alt="Recepcionista">
+                    <p>
+                        El personal de recepción atiende citas, dudas y brinda apoyo
+                        a los clientes durante su visita.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2>Asistentes Veterinarios</h2>
+
+            <div class="contenedor centro">
+
+                <div class="tarjeta">
+                    <h3>Apoyo médico</h3>
+                    <img src="{% static 'empleados/img/asistente.jpg' %}" alt="Asistente veterinario">
+                    <p>
+                        Los asistentes ayudan a los veterinarios durante consultas
+                        y procedimientos médicos.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <h2>Médicos Veterinarios</h2>
+            <p>Algunos de nuestros médicos veterinarios mas reconocidos son:</p>
+
+            <div class="contenedor centro">
+
+                <div class="tarjeta">
+                <h3>Dra. María López</h3>
+                <img src="{% static 'empleados/img/doctora.jpg' %}" alt="Doctora veterinaria">
+                <p>
+                    Especialista en medicina preventiva y cuidado general de perros y gatos.
+                    Cuenta con amplia experiencia en consultas y vacunación.
+                </p>
+            </div>  
+
+            <div class="tarjeta">
+                <h3>Dr. Carlos Hernández</h3>
+                <img src="{% static 'empleados/img/doctor.jpg' %}" alt="Doctor veterinario">
+                <p>
+                 Médico veterinario enfocado en cirugías y tratamientos especializados
+                    para mascotas de distintas especies.
+                </p>
+             </div>
+
+            </div>
+</article>
+        <article>
+            <h2>Personal de Limpieza</h2>
+
+            <div class="contenedor wrap">
+                <div class="tarjeta">
+                    <h3>Higiene</h3>
+                    <img src="{% static 'empleados/img/limpieza.jpg' %}" alt="Personal de limpieza">
+                    <p>
+                        Mantienen limpias las áreas médicas y de atención para
+                        garantizar seguridad.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+      <footer>
+        <address>
+
+            <h3>Veterinaria Patitas Felices</h3>
+
+            <p>
+                Av. Principal #245, Guadalupe, Nuevo León
+            </p>
+
+            <p>
+                📞 Teléfono: +52 123 456 78 90
+            </p>
+
+            <p>
+                📧 Correo: contacto@patitasfelices.com
+            </p>
+
+            <p>
+                🕒 Horario:
+                Lunes a Sábado de 9:00 AM a 7:00 PM
+            </p>
+
+            <p>
+                © 2026 Veterinaria Patitas Felices |
+                Todos los derechos reservados
+            </p>
+
+        </address>
+    </footer>
+
+</body>
+</html>
