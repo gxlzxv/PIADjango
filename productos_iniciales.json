@@ -1,0 +1,102 @@
+[
+  {
+    "model": "productos.producto",
+    "pk": 1,
+    "fields": {
+      "nombre": "Collar Antipulgas",
+      "descripcion": "Collar repelente de pulgas y garrapatas, protección de hasta 6 meses.",
+      "precio": "150.00",
+      "stock": 30
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 2,
+    "fields": {
+      "nombre": "Alimento Premium",
+      "descripcion": "Alimento balanceado premium para perros adultos, todas las razas.",
+      "precio": "420.00",
+      "stock": 20
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 3,
+    "fields": {
+      "nombre": "Juguete de Pelota",
+      "descripcion": "Pelota resistente de hule para juego y ejercicio de mascotas.",
+      "precio": "60.00",
+      "stock": 50
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 4,
+    "fields": {
+      "nombre": "Arena para Gato",
+      "descripcion": "Arena aglomerante con control de olores, bolsa de 5 kg.",
+      "precio": "180.00",
+      "stock": 25
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 5,
+    "fields": {
+      "nombre": "Shampoo Medicado",
+      "descripcion": "Shampoo medicado para el cuidado de piel sensible y control de hongos.",
+      "precio": "135.00",
+      "stock": 18
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 6,
+    "fields": {
+      "nombre": "Transportadora",
+      "descripcion": "Transportadora rígida para mascotas pequeñas y medianas, ventilada.",
+      "precio": "650.00",
+      "stock": 10
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 7,
+    "fields": {
+      "nombre": "Vitaminas Caninas",
+      "descripcion": "Suplemento vitamínico para el fortalecimiento del sistema inmune.",
+      "precio": "220.00",
+      "stock": 22
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 8,
+    "fields": {
+      "nombre": "Rascador para Gato",
+      "descripcion": "Rascador de sisal con plataforma y juguete colgante integrado.",
+      "precio": "380.00",
+      "stock": 12
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 9,
+    "fields": {
+      "nombre": "Cepillo de Cerdas",
+      "descripcion": "Cepillo de cerdas suaves para el cuidado diario del pelaje.",
+      "precio": "95.00",
+      "stock": 35
+    }
+  },
+  {
+    "model": "productos.producto",
+    "pk": 10,
+    "fields": {
+      "nombre": "Alimento para Cachorros",
+      "descripcion": "Alimento especializado para cachorros en etapa de crecimiento.",
+      "precio": "390.00",
+      "stock": 15
+    }
+  }
+]
