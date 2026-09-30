@@ -116,9 +116,66 @@
 
     <footer>
 
-        <address>
-
             <h3>Veterinaria Patitas Felices</h3>
+            <div class="formulario-resena">
+
+        <h4>Déjanos tu opinión</h4>
+
+        <form id="form-resena" method="POST">
+
+            {% csrf_token %}
+
+            <label for="nombre">Nombre:</label>
+
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                maxlength="100"
+                required
+            >
+
+            <label>Calificación:</label>
+
+            <div class="estrellas">
+
+                <input type="radio" id="estrella5" name="calificacion" value="5" required>
+                <label for="estrella5">★</label>
+
+                <input type="radio" id="estrella4" name="calificacion" value="4">
+                <label for="estrella4">★</label>
+
+                <input type="radio" id="estrella3" name="calificacion" value="3">
+                <label for="estrella3">★</label>
+
+                <input type="radio" id="estrella2" name="calificacion" value="2">
+                <label for="estrella2">★</label>
+
+                <input type="radio" id="estrella1" name="calificacion" value="1">
+                <label for="estrella1">★</label>
+
+            </div>
+
+            <label for="resena">Reseña:</label>
+
+            <textarea
+                id="resena"
+                name="resena"
+                rows="4"
+                maxlength="500"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Enviar reseña
+            </button>
+
+            <p id="mensaje-resena"></p>
+
+        </form>
+
+    </div>
+         <address>
 
             <p>
                 Av. Principal #245, San Pedro, Nuevo León
@@ -146,5 +203,51 @@
 
     </footer>
 
+    <script>
+
+    const formulario = document.getElementById('form-resena');
+    const mensaje = document.getElementById('mensaje-resena');
+
+    formulario.addEventListener('submit', function(event) {
+
+        event.preventDefault();
+
+        const datos = new FormData(formulario);
+
+        fetch('', {
+            method: 'POST',
+            body: datos,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+
+            mensaje.textContent = data.mensaje;
+
+            if (data.success) {
+
+                mensaje.className = 'mensaje-exito';
+
+                formulario.reset();
+
+            } else {
+
+                mensaje.className = 'mensaje-error';
+
+            }
+
+        })
+        .catch(error => {
+
+            mensaje.textContent = 'Ocurrió un error al enviar la reseña.';
+            mensaje.className = 'mensaje-error';
+
+        });
+
+    });
+
+</script>
 </body>
 </html>

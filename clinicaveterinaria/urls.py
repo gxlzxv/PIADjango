@@ -18,14 +18,25 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
+from home.admin import ver_resenas
+
 
 urlpatterns = [
-    path('', RedirectView.as_view(url='home/')),  # redirige la raíz al home
-    path("admin/", admin.site.urls),
+    path('', RedirectView.as_view(url='home/')),
+
+    # Esta debe estar ANTES de admin/
+    path(
+        'admin/resenas/',
+        admin.site.admin_view(ver_resenas),
+        name='admin_resenas'
+    ),
+
+    path('admin/', admin.site.urls),
+
     path('home/', include('home.urls')),
-    path("doctores/",include('doctores.urls')),
-    path("empleados/",include('empleados.urls')),
-    path("servicios/",include('servicios.urls')),
-    path("sucursales/",include('sucursales.urls')),
+    path('doctores/', include('doctores.urls')),
+    path('empleados/', include('empleados.urls')),
+    path('servicios/', include('servicios.urls')),
+    path('sucursales/', include('sucursales.urls')),
     path('productos/', include('productos.urls')),
 ]

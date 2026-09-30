@@ -186,3 +186,89 @@ address p{
 .tarjeta-index a:hover{
     background: #336574;
 }
+.formulario-resena{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 12px;
+}
+
+.formulario-resena h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.formulario-resena label{
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-resena input[type="text"],
+.formulario-resena textarea{
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.formulario-resena textarea{
+    resize: vertical;
+}
+
+.estrellas{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.estrellas input{
+    display: none;
+}
+
+.estrellas label{
+    font-size: 35px;
+    color: #777;
+    cursor: pointer;
+    margin: 0;
+}
+
+.estrellas label:hover,
+.estrellas label:hover ~ label,
+.estrellas input:checked ~ label{
+    color: #ffd700;
+}
+
+.formulario-resena button{
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #063133;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-resena button:hover{
+    background-color: #336574;
+}
+
+#mensaje-resena{
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.mensaje-exito{
+    color: #064d28;
+}
+
+.mensaje-error{
+    color: #8b0000;
+}
